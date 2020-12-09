@@ -1,0 +1,14 @@
+name: 'Action'
+description: 'Action template'
+author: 'zcong1993'
+branding:
+  icon: 'message-square'
+  color: 'blue'
+inputs:
+  body:
+    description: 'Body to echo'
+    required: false
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
