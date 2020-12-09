@@ -1,12 +1,21 @@
-name: 'Action'
-description: 'Action template'
+name: 'Setup Bin'
+description: 'Setup binary tools'
 author: 'zcong1993'
 branding:
   icon: 'message-square'
   color: 'blue'
 inputs:
-  body:
-    description: 'Body to echo'
+  name:
+    description: 'Bin name'
+    required: true
+  bin-version:
+    description: 'Bin version for cache'
+    required: true
+  download-url:
+    description: 'Binary download url'
+    required: true
+  bin-path:
+    description: 'Binary file relative path, default ./'
     required: false
 
 runs:

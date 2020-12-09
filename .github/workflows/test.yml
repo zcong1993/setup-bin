@@ -8,3 +8,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: ./
+      with:
+        download-url: https://github.com/zcong1993/changed-files/releases/download/v0.1.2/changed-files_0.1.2_linux_amd64.tar.gz
+        name: changed-files
+        bin-version: '0.1.2'
+    - run: changed-files -v
