@@ -9,7 +9,7 @@ inputs:
     description: 'Bin name'
     required: true
   bin-version:
-    description: 'Bin version for cache'
+    description: 'Binary version as cache key'
     required: true
   download-url:
     description: 'Binary download url'
