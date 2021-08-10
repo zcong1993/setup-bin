@@ -1119,13 +1119,12 @@
   resolved "https://registry.npmjs.org/@vercel/ncc/-/ncc-0.29.0.tgz#ac23fc23f1593b05c72360108bcf6d849d2f317a"
   integrity sha512-p+sB835wOSDdgm2mgFgSOcXJF84AqZ+vBEnnGS0sm8veA92Hia7sqH0qEnqeFilPl+cXtxbdh2er+WdlfbVCZA==
 
-"@zcong/actions-installer@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@zcong/actions-installer/-/actions-installer-0.3.0.tgz#d639eea1b2d355039f9858d67b82a75192054384"
-  integrity sha512-HdYhTY/dmr1wRJwJacLeLzVk8rnVJnsjAAkk6vulM4wgorzLvC3+Udqnvku2f41ogh/y7a268EKXebCyke3uew==
+"@zcong/actions-installer@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.npmjs.org/@zcong/actions-installer/-/actions-installer-0.3.1.tgz#7dbfe72e11b48203996f5cbd827988225fc9b0d9"
+  integrity sha512-9p5jtBfTF3hLKAkCUkDuwQ7T0P/wW7ESPIv19RzD5E569EbcdOCuonIPr3i+4/LqHq33RXzXwMk7DZTSIazDww==
   dependencies:
     "@actions/core" "^1.4.0"
-    "@actions/io" "^1.1.1"
     "@actions/tool-cache" "^1.7.1"
 
 abab@^2.0.3, abab@^2.0.5:

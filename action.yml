@@ -9,7 +9,7 @@ inputs:
     description: 'Name present the binary, eg: hugo'
     required: true
   bin-path:
-    description: 'Binary file path, default ~/${name}'
+    description: 'Binary file relative path with asset folder, default .'
     required: false
   bin-version:
     description: 'Binary version as cache key, required if download-url set'

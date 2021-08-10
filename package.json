@@ -65,6 +65,6 @@
     "@actions/core": "^1.4.0",
     "@actions/exec": "^1.1.0",
     "@octokit/action": "^3.14.1",
-    "@zcong/actions-installer": "^0.3.0"
+    "@zcong/actions-installer": "^0.3.1"
   }
 }
