@@ -34,3 +34,10 @@ jobs:
         tag-version: latest
         matcher: Linux-64bit.tar.gz$
         test-cmd: hugo version
+    - name: direct url test cache
+      uses: ./
+      with:
+        download-url: https://github.com/zcong1993/changed-files/releases/download/v0.1.2/changed-files_0.1.2_linux_amd64.tar.gz
+        name: changed-files
+        bin-version: '0.1.2'
+        test-cmd: changed-files -v
