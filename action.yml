@@ -11,11 +11,11 @@ inputs:
   bin-path:
     description: 'Binary file relative path with asset folder, default .'
     required: false
-  bin-version:
-    description: 'Binary version as cache key, required if download-url set'
-    required: false
   test-cmd:
     description: 'Use for test if binary install success, eg: hugo version'
+    required: false
+  bin-version:
+    description: 'Binary version as cache key, required if download-url set'
     required: false
   download-url:
     description: 'Direct binary download url'
