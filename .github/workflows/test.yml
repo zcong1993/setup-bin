@@ -16,6 +16,8 @@ jobs:
         test-cmd: changed-files -v
     - name: test github release
       uses: ./
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         name: hugo-861
         repo-full: gohugoio/hugo
@@ -24,6 +26,8 @@ jobs:
         test-cmd: hugo version
     - name: test github release latest
       uses: ./
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         name: hugo
         repo-full: gohugoio/hugo

@@ -1,5 +1,5 @@
 import * as core from '@actions/core'
-import * as github from '@actions/github'
+import { Octokit } from '@octokit/action'
 import * as exec from '@actions/exec'
 import { BinInstaller } from './installer'
 
@@ -35,7 +35,7 @@ async function run(): Promise<void> {
       }
 
       const [owner, repo] = repoFull.split('/')
-      const octokit = github.getOctokit(process.env.GITHUB_TOKEN)
+      const octokit = new Octokit()
 
       const matcherReg = new RegExp(matcher)
 
