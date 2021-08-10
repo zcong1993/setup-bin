@@ -6,16 +6,28 @@ branding:
   color: 'blue'
 inputs:
   name:
-    description: 'Bin name'
-    required: true
-  bin-version:
-    description: 'Binary version as cache key'
-    required: true
-  download-url:
-    description: 'Binary download url'
+    description: 'Name present the binary, eg: hugo'
     required: true
   bin-path:
-    description: 'Binary file relative path, default ./'
+    description: 'Binary file path, default ~/${name}'
+    required: false
+  bin-version:
+    description: 'Binary version as cache key, required if download-url set'
+    required: false
+  test-cmd:
+    description: 'Use for test if binary install success, eg: hugo version'
+    required: false
+  download-url:
+    description: 'Direct binary download url'
+    required: false
+  repo-full:
+    description: 'Download github release, owner/repo, eg: gohugoio/hugo, required if download-url is not set'
+    required: false
+  tag-version:
+    description: 'Github release tag name or latest, required if download-url is not set'
+    required: false
+  matcher:
+    description: 'Regex use for detect which asset should download, eg: "Linux-64bit.tar.gz$", required if download-url is not set'
     required: false
 
 runs:
