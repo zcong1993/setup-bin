@@ -15096,7 +15096,7 @@ async function run() {
         const repoFull = core.getInput('repo-full');
         const tag = core.getInput('tag-version');
         const matcher = core.getInput('matcher');
-        const token = process.env.GITHUB_TOKEN;
+        const token = process.env.GITHUB_TOKEN ? `token ${process.env.GITHUB_TOKEN}` : undefined;
         const installer = new installer_1.BinInstaller(name, binPath, token);
         if (downloadUrl) {
             if (!version) {
