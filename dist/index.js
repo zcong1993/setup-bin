@@ -15096,8 +15096,7 @@ async function run() {
         const repoFull = core.getInput('repo-full');
         const tag = core.getInput('tag-version');
         const matcher = core.getInput('matcher');
-        const token = process.env.GITHUB_TOKEN ? `token ${process.env.GITHUB_TOKEN}` : undefined;
-        const installer = new installer_1.BinInstaller(name, binPath, token);
+        const installer = new installer_1.BinInstaller(name, binPath);
         if (downloadUrl) {
             if (!version) {
                 throw new Error('version is required when set downloadUrl');
