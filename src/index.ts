@@ -20,7 +20,9 @@ async function run(): Promise<void> {
     // github release assets matcher, regex
     const matcher = core.getInput('matcher')
 
-    const installer = new BinInstaller(name, binPath)
+    const token = process.env.GITHUB_TOKEN
+
+    const installer = new BinInstaller(name, binPath, token)
 
     if (downloadUrl) {
       if (!version) {
